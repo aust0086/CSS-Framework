@@ -1,1 +1,24 @@
 @use '../fonts/index' as fonts;
+
+$fonts: (
+    'heading': fonts.$font-barriecito,
+    'body': fonts.$font-vend-sans,
+    'special': fonts.$font-delius,
+);
+
+$font-sizes:(
+    'sm': 12px,
+    'md': 18px,
+    'lg': 36px,
+    'xl': 50px,
+    '2xl': 64px,
+    '3xl': 72px,
+);
+
+
+
+@each $name,$size in $font-sizes {
+    .text-#{$name} {
+        font-size: $size;
+    }
+}
