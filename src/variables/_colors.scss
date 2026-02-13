@@ -1,1 +1,41 @@
 @use 'sass:map';
+
+$colors: (
+    'ocean': #5b85aa,
+    'coral': #cc727e,
+    'sunny': #f6c94d,
+    'sunset': #e55934,
+    'palm': #738262,
+    'shell': #fff4e8, 
+    'tangerine': #f08c21,
+    'midnight': #1a3a52,
+    'white': #ffffff,
+    'grass': #ad9f22
+);
+
+@each $color-name, $color-value in $colors {
+    .bg-#{$color-name} {
+        background-color: $color-value;
+    }
+}
+
+@each $color-name, $color-value in $colors {
+    .text-#{$color-name} {
+        color: $color-value;
+    }
+
+    .text-#{$color-name}-hover:hover {
+        color: $color-value;
+    }
+}
+
+$theme: (
+    'primary': map.get($colors, 'ocean'),
+    'secondary': map.get($colors, 'coral'),
+    'success': map.get($colors, 'seafoam'),
+    'warning': map.get($colors, 'sand'),
+    'error': map.get($colors, 'sunset'),
+    'info': map.get($colors, 'sky'),
+    'light': map.get($colors, 'shell'),
+    'dark': map.get($colors, 'midnight')
+);
