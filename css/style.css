@@ -1,28 +1,121 @@
-@import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap");
-.text-sm {
-  font-size: 12px;
+.bg-ocean {
+  background-color: #5b85aa;
 }
 
-.text-md {
-  font-size: 18px;
+.bg-coral {
+  background-color: #cc727e;
 }
 
-.text-lg {
-  font-size: 36px;
+.bg-sunny {
+  background-color: #f6c94d;
 }
 
-.text-xl {
-  font-size: 50px;
+.bg-sunset {
+  background-color: #e55934;
 }
 
-.text-2xl {
-  font-size: 64px;
+.bg-palm {
+  background-color: #738262;
 }
 
-.text-3xl {
-  font-size: 72px;
+.bg-shell {
+  background-color: #fff4e8;
+}
+
+.bg-tangerine {
+  background-color: #f08c21;
+}
+
+.bg-midnight {
+  background-color: #1a3a52;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+
+.bg-grass {
+  background-color: #ad9f22;
+}
+
+.text-ocean {
+  color: #5b85aa;
+}
+
+.text-ocean-hover:hover {
+  color: #5b85aa;
+}
+
+.text-coral {
+  color: #cc727e;
+}
+
+.text-coral-hover:hover {
+  color: #cc727e;
+}
+
+.text-sunny {
+  color: #f6c94d;
+}
+
+.text-sunny-hover:hover {
+  color: #f6c94d;
+}
+
+.text-sunset {
+  color: #e55934;
+}
+
+.text-sunset-hover:hover {
+  color: #e55934;
+}
+
+.text-palm {
+  color: #738262;
+}
+
+.text-palm-hover:hover {
+  color: #738262;
+}
+
+.text-shell {
+  color: #fff4e8;
+}
+
+.text-shell-hover:hover {
+  color: #fff4e8;
+}
+
+.text-tangerine {
+  color: #f08c21;
+}
+
+.text-tangerine-hover:hover {
+  color: #f08c21;
+}
+
+.text-midnight {
+  color: #1a3a52;
+}
+
+.text-midnight-hover:hover {
+  color: #1a3a52;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-white-hover:hover {
+  color: #ffffff;
+}
+
+.text-grass {
+  color: #ad9f22;
+}
+
+.text-grass-hover:hover {
+  color: #ad9f22;
 }
 
 /*# sourceMappingURL=style.css.map */
