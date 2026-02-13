@@ -15,7 +15,14 @@ $font-sizes:(
     '3xl': 72px,
 );
 
-
+$font-weights: (
+    'light': 300,
+    'normal': 400,
+    'medium': 500,
+    'semibold': 600,
+    'bold': 700,
+    'extrabold': 800,
+);
 
 @each $name,$size in $font-sizes {
     .text-#{$name} {
