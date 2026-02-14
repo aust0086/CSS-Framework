@@ -1,4 +1,6 @@
-@use './reset/index' as reset;
-@use './base/index' as base;
-@use './variables/index' as variables;
-@use 'utilities' as ultilities;
+@use "variables";
+@use "base";
+@use "reset";
+@use "fonts";
+@use "utilities";
+
