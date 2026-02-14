@@ -15,6 +15,15 @@ $font-sizes:(
     '3xl': 72px,
 );
 
+$heading-sizes:(
+    'h1': 100px,
+    'h2': 36px,
+    'h3': 24px,
+    'h4': 20px,
+    'h5': 18px,
+    'h6': 16px,
+);
+
 $font-weights: (
     'light': 300,
     'normal': 400,
@@ -26,6 +35,18 @@ $font-weights: (
 
 @each $name,$size in $font-sizes {
     .text-#{$name} {
+        font-size: $size;
+    }
+}
+
+@each $name,$weight in $font-weights {
+    .font-#{$name} {
+        font-weight: $weight;
+    }
+}
+
+@each $name,$size in $heading-sizes {
+    .#{$name} {
         font-size: $size;
     }
 }
