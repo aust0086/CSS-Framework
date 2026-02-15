@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Delius&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vend+Sans:ital,wght@0,300..700;1,300..700&display=swap");
@@ -169,54 +170,34 @@
   font-weight: 800;
 }
 
-.h1 {
-  font-size: 100px;
-}
-
-.h2 {
-  font-size: 36px;
-}
-
-.h3 {
-  font-size: 24px;
-}
-
-.h4 {
-  font-size: 20px;
-}
-
-.h5 {
-  font-size: 18px;
-}
-
-.h6 {
-  font-size: 16px;
-}
-
 h1 {
   font-family: "Barriecito", system-ui;
-  font-size: 50px;
+  font-size: 64px;
 }
 
 h2 {
   font-family: "Barriecito", system-ui;
-  font-size: 36px;
+  font-size: 50px;
 }
 
 h3 {
   font-family: "Barriecito", system-ui;
+  font-size: 36px;
 }
 
 h4 {
   font-family: "Barriecito", system-ui;
+  font-size: 18px;
 }
 
 h5 {
   font-family: "Barriecito", system-ui;
+  font-size: 12px;
 }
 
 h6 {
   font-family: "Barriecito", system-ui;
+  font-size: 12px;
 }
 
 /***
@@ -1002,6 +983,108 @@ meter {
 .py-12 {
   padding-top: 3rem;
   padding-bottom: 3rem;
+}
+
+/*list automatically */
+li {
+  border: 2px solid black;
+  width: fit-content;
+  padding: 2px;
+  margin: 5px;
+  list-style-type: circle;
+  font-family: "Delius", cursive;
+}
+
+/*hover effect*/
+li:hover {
+  background-color: #cc727e;
+}
+
+/*list with no border but with a fun icon*/
+.ul-fun li {
+  border: none;
+  list-style-type: "🏖";
+  list-style-position: inside;
+}
+
+/*list with no border and the original circle icon*/
+.ul-original li {
+  border: none;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/*ordered list with the original decimal icon */
+.ol-original li {
+  border: none;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+/*automatic button*/
+button {
+  border: 1px solid black;
+  background-color: transparent;
+  color: black;
+  padding: 10px 20px;
+  font-family: "Delius", cursive;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+/*fun and colourfull button */
+.button-fun {
+  background-color: #e55934;
+  color: black;
+  border: 2px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: "Delius", cursive;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.button-fun:hover {
+  background-color: #f08c21;
+}
+
+/* table for no lines and no colours */
+.table-blank {
+  margin: 10px;
+}
+.table-blank th, .table-blank td {
+  padding: 10px;
+}
+.table-blank {
+  border: none;
+}
+
+/* table for colours and lines */
+.table-striped {
+  margin: 10px;
+}
+.table-striped th, .table-striped td {
+  padding: 10px;
+  border: 1px solid black;
+}
+.table-striped tr:nth-child(odd) {
+  background-color: #f08c21;
+}
+.table-striped tr:nth-child(even) {
+  background-color: #fcd5b4;
+}
+.table-striped th {
+  background-color: #fff4e8;
+}
+
+/* table for just lines */
+.table-plane {
+  margin: 10px;
+}
+.table-plane th, .table-plane td {
+  padding: 10px;
+  border: 1px solid black;
 }
 
 /*# sourceMappingURL=style.css.map */
