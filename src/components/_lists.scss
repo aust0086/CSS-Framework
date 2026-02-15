@@ -1,41 +1,51 @@
-/*list automatically */
-li{
+@use 'sass:map';
+@use '../variables/index.scss' as variables;
+
+//ul list automatically
+ul{
+    li {
     border: 2px solid black;
     width: fit-content;
-    padding:2px;
-    margin:5px;
+    padding: 2px;
+    margin: 10px;
     list-style-type: circle;
     font-family: 'Delius', cursive;
 }
+}
 
-/*hover effect*/
+//ol list automaticlly
+ol{
+    li {
+        width: fit-content;
+        padding: 2px;
+        margin: 10px;
+        list-style-type: decimal;
+        list-style-position: inside;
+    }
+}
+
+
+//hover effect
 li:hover {
-        background-color: #cc727e;
+    width: fit-content;
+    background-color: #cc727e;
 }
 
-/*list with no border but with a fun icon*/
-.ul-fun{
-    li{
-    border:none;
-    list-style-type: '\1F3D6';
-    list-style-position: inside;
-    } 
+//list with no border but with a fun icon
+.ul-fun {
+    li {
+        border: none;
+        list-style-type: '\1F3D6';
+        list-style-position: inside;
+    }
 }
 
-/*list with no border and the original circle icon*/
-.ul-original{
-    li{
-    border:none;
-    list-style-type: circle;
-    list-style-position: inside;
-    } 
-}
 
-/*ordered list with the original decimal icon */
-.ol-original{
-    li{
-    border: none;
-    list-style-type: decimal;
-    list-style-position: inside;
+//list with no border and the original circle icon
+.ul-original {
+    li {
+        border: none;
+        list-style-type: circle;
+        list-style-position: inside;
     }
 }

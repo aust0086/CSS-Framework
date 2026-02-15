@@ -6,7 +6,7 @@ $fonts: (
     'special': fonts.$font-delius,
 );
 
-$font-sizes:(
+$font-sizes: (
     'sm': 12px,
     'md': 18px,
     'lg': 36px,
@@ -24,13 +24,13 @@ $font-weights: (
     'extrabold': 800,
 );
 
-@each $name,$size in $font-sizes {
+@each $name, $size in $font-sizes {
     .text-#{$name} {
         font-size: $size;
     }
 }
 
-@each $name,$weight in $font-weights {
+@each $name, $weight in $font-weights {
     .font-#{$name} {
         font-weight: $weight;
     }

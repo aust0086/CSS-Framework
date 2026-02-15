@@ -1,46 +1,87 @@
 $spacing: (
     '0': 0,
-    '1': 0.25rem,  // 4px
-    '2': 0.5rem,   // 8px
-    '3': 0.75rem,  // 12px
-    '4': 1rem,     // 16px
-    '5': 1.25rem,  // 20px
-    '6': 1.5rem,   // 24px
-    '8': 2rem,     // 32px
-    '10': 2.5rem,  // 40px
-    '12': 3rem,    // 48px
+    '1': 0.25rem,
+    // 4px
+    '2': 0.5rem,
+    // 8px
+    '3': 0.75rem,
+    // 12px
+    '4': 1rem,
+    // 16px
+    '5': 1.25rem,
+    // 20px
+    '6': 1.5rem,
+    // 24px
+    '8': 2rem,
+    // 32px
+    '10': 2.5rem,
+    // 40px
+    '12': 3rem,
+    // 48px
 );
 
 // margin utilities
 @each $name, $size in $spacing {
-    .m-#{$name} { margin: $size; }
-    .mt-#{$name} { margin-top: $size; }
-    .mr-#{$name} { margin-right: $size; }
-    .mb-#{$name} { margin-bottom: $size; }
-    .ml-#{$name} { margin-left: $size; }
-    .mx-#{$name} { 
-        margin-left: $size; 
-        margin-right: $size; 
+    .m-#{$name} {
+        margin: $size;
     }
-    .my-#{$name} { 
-        margin-top: $size; 
-        margin-bottom: $size; 
+
+    .mt-#{$name} {
+        margin-top: $size;
+    }
+
+    .mr-#{$name} {
+        margin-right: $size;
+    }
+
+    .mb-#{$name} {
+        margin-bottom: $size;
+    }
+
+    .ml-#{$name} {
+        margin-left: $size;
+    }
+
+    .mx-#{$name} {
+        margin-left: $size;
+        margin-right: $size;
+    }
+
+    .my-#{$name} {
+        margin-top: $size;
+        margin-bottom: $size;
     }
 }
 
 // padding utilities
 @each $name, $size in $spacing {
-    .p-#{$name} { padding: $size; }
-    .pt-#{$name} { padding-top: $size; }
-    .pr-#{$name} { padding-right: $size; }
-    .pb-#{$name} { padding-bottom: $size; }
-    .pl-#{$name} { padding-left: $size; }
-    .px-#{$name} { 
-        padding-left: $size; 
-        padding-right: $size; 
+    .p-#{$name} {
+        padding: $size;
     }
-    .py-#{$name} { 
-        padding-top: $size; 
-        padding-bottom: $size; 
+
+    .pt-#{$name} {
+        padding-top: $size;
+    }
+
+    .pr-#{$name} {
+        padding-right: $size;
+    }
+
+    .pb-#{$name} {
+        padding-bottom: $size;
+    }
+
+    .pl-#{$name} {
+        padding-left: $size;
+    }
+
+    .px-#{$name} {
+        padding-left: $size;
+        padding-right: $size;
+    }
+
+    .py-#{$name} {
+        padding-top: $size;
+        padding-bottom: $size;
     }
 }

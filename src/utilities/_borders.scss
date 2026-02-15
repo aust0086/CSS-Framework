@@ -26,15 +26,27 @@ $border-radius: (
 
 // border width
 @each $name, $width in $border-widths {
-    .border-#{$name} { border-width: $width; }
+    .border-#{$name} {
+        border-width: $width;
+    }
 }
 
 // border radius
 @each $name, $radius in $border-radius {
-    .rounded-#{$name} { border-radius: $radius; }
+    .rounded-#{$name} {
+        border-radius: $radius;
+    }
 }
 
 // border styles
-.border-solid { border-style: solid; }
-.border-dotted { border-style: dotted; }
-.border-dashed { border-style: dashed; }
+.border-solid {
+    border-style: solid;
+}
+
+.border-dotted {
+    border-style: dotted;
+}
+
+.border-dashed {
+    border-style: dashed;
+}

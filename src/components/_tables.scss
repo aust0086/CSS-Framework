@@ -1,35 +1,50 @@
-/* table for no lines and no colours */
-.table-blank{
-     margin:10px;
-    th, td{
-    padding: 10px;
+@use 'sass:map';
+@use '../variables/index.scss' as variables;
+
+//table for no lines and no colours
+.table-blank {
+    margin: 10px;
+
+    th,
+    td {
+        padding: 10px;
     }
-    border:none;    
+
+    border:none;
 }
 
-/* table for colours and lines */
-.table-striped{
-    margin:10px;
-    th, td{
-    padding: 10px;
-     border: 1px solid black;
+
+//table for colours and lines
+.table-striped {
+    margin: 10px;
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
     }
-tr:nth-child(odd) {
-    background-color: #f08c21;
-}
-tr:nth-child(even) {
-    background-color: #fcd5b4;
-}
-th{
-    background-color: #fff4e8;
-}
+
+    tr:nth-child(odd) {
+        background-color: #f08c21;
+    }
+
+    tr:nth-child(even) {
+        background-color: #fcd5b4;
+    }
+
+    th {
+        background-color: #fff4e8;
+    }
 }
 
-/* table for just lines */
-.table-plane{
-     margin:10px;
-    th, td{
-    padding: 10px;
-     border: 1px solid black;
+
+//table for just lines
+.table-plane {
+    margin: 10px;
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid black;
     }
 }

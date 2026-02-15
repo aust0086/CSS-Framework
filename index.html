@@ -2,72 +2,87 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <link rel="stylesheet" href="./css/style.css">
-       <link rel="stylesheet" href="./src/reset/_reset.scss">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./src/reset/_reset.scss">
+  <title>Document</title>
 </head>
 
 <body>
+  <h1>Welcome to the beach</h1>
+  <h2>Here is an unorderd list of beach items</h2>
+  <ul>
+    <li>Beach ball</li>
+    <li>Beach towel</li>
+    <li>Beach umbrella</li>
+    <li>Beach chair</li>
+  </ul>
+  <h2>Here is an ordered list of beach items</h2>
+  <ol>
+    <li>Beach ball</li>
+    <li>Beach towel</li>
+    <li>Beach umbrella</li>
+    <li>Beach chair</li>
+  </ol>
+  <br> 
+ <h2>Here is a fun unorderd list of beach items</h2>
+  <ul class="ul-fun">
+    <li>Beach ball</li>
+    <li>Beach towel</li>
+    <li>Beach umbrella</li>
+    <li>Beach chair</li>
+  </ul>
 
-    <h1>Welcome to the beach</h1>
-    <h2>Here is a list of beach items</h2>
-    <ul class="ul-fun">
-        <li>Beach ball</li>
-        <li>Beach towel</li>
-        <li>Beach umbrella</li>
-        <li>Beach chair</li>
-    </ul>
-    <h1>Here is an ordered list of beach items</h1>
-     <ol class="ol-original">
-        <li>Beach ball</li>
-        <li>Beach towel</li>
-        <li>Beach umbrella</li>
-        <li>Beach chair</li>
-    </ol>
+  <button>Click me</button>
+  <button class="button-fun">Click me</button>
 
-        <button>Click me</button>
-        <button class="button-fun">Click me</button>
+  <br>
+  <br>
+  <table class="table-striped">
+    <caption>Who is coming</caption>
+    <thead>
+      <tr>
+        <th scope="col">Status</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">Yes</th>
+        <td>Mark</td>
+        <td>Otto</td>
+      </tr>
+      <tr>
+        <th scope="row">Yes</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+      </tr>
+      <tr>
+        <th scope="row">No</th>
+        <td>John</td>
+        <td>Doe</td>
+      </tr>
+      <tr>
+        <th scope="row">Yes</th>
+        <td>Jane</td>
+        <td>Eod</td>
+      </tr>
+    </tbody>
+  </table>
 
-        <br>
-        <br>
-        <table class ="table-striped">
-  <thead>
-    <tr>
-      <th scope="col">#</th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td>Mark</td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>John</td>
-      <td>Doe</td>
-      <td>@social</td>
-    </tr>
-     <tr>
-      <th scope="row">4</th>
-      <td>Jane</td>
-      <td>Eod</td>
-      <td>@no</td>
-    </tr>
-  </tbody>
-</table>
+  <br>
+  <br>
+  <form class="form-fun">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <input type="submit" value="Submit">
+  </form>
 
 </body>
 

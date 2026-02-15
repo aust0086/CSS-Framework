@@ -1,26 +1,30 @@
 @use 'sass:map';
 @use '../variables/index.scss' as variables;
 
-/*automatic button*/
-button{
-    border:1px solid black;
-  background-color: transparent;
+//automatic button
+button {
+    border: 1px solid black;
+    background-color: transparent;
     color: black;
     padding: 10px 20px;
+    margin:5px;
     font-family: 'Delius', cursive;
     cursor: pointer;
-     border-radius: 5px;
+    border-radius: 10px;
     font-size: map.get(variables.$font-sizes, md);
-    
-    
+
+
+
 }
 
-/*fun and colourfull button */
-.button-fun{
+
+//fun and colourfull button
+.button-fun {
     background-color: map.get(variables.$colors, sunset);
     color: black;
     border: 2px solid black;
     padding: 10px 20px;
+    margin:10px;
     border-radius: 5px;
     font-family: 'Delius', cursive;
     cursor: pointer;

@@ -1,34 +1,45 @@
 @use 'sass:map';
 @use '../variables/typography' as typography;
 
-h1{
+h1 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, '2xl');
 }
 
-h2{
+h2 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, 'xl');
 
 }
 
-h3{
+h3 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, 'lg');
 }
 
-h4{
+h4 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, 'md');
 }
 
-h5{
+h5 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, 'sm');
 }
 
-h6{
+h6 {
+    padding:10px;
     font-family: map.get(typography.$fonts, 'heading');
     font-size: map.get(typography.$font-sizes, 'sm');
 }
 
+p{
+    padding:10px;
+    font-family: map.get(typography.$fonts, 'body');
+    font-size: map.get(typography.$font-sizes, 'sm');
+}

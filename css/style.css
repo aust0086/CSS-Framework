@@ -171,32 +171,44 @@
 }
 
 h1 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
   font-size: 64px;
 }
 
 h2 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
   font-size: 50px;
 }
 
 h3 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
   font-size: 36px;
 }
 
 h4 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
   font-size: 18px;
 }
 
 h5 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
   font-size: 12px;
 }
 
 h6 {
+  padding: 10px;
   font-family: "Barriecito", system-ui;
+  font-size: 12px;
+}
+
+p {
+  padding: 10px;
+  font-family: "Vend Sans", sans-serif;
   font-size: 12px;
 }
 
@@ -985,60 +997,58 @@ meter {
   padding-bottom: 3rem;
 }
 
-/*list automatically */
-li {
+ul li {
   border: 2px solid black;
   width: fit-content;
   padding: 2px;
-  margin: 5px;
+  margin: 10px;
   list-style-type: circle;
   font-family: "Delius", cursive;
 }
 
-/*hover effect*/
+ol li {
+  width: fit-content;
+  padding: 2px;
+  margin: 10px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
 li:hover {
+  width: fit-content;
   background-color: #cc727e;
 }
 
-/*list with no border but with a fun icon*/
 .ul-fun li {
   border: none;
   list-style-type: "🏖";
   list-style-position: inside;
 }
 
-/*list with no border and the original circle icon*/
 .ul-original li {
   border: none;
   list-style-type: circle;
   list-style-position: inside;
 }
 
-/*ordered list with the original decimal icon */
-.ol-original li {
-  border: none;
-  list-style-type: decimal;
-  list-style-position: inside;
-}
-
-/*automatic button*/
 button {
   border: 1px solid black;
   background-color: transparent;
   color: black;
   padding: 10px 20px;
+  margin: 5px;
   font-family: "Delius", cursive;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 18px;
 }
 
-/*fun and colourfull button */
 .button-fun {
   background-color: #e55934;
   color: black;
   border: 2px solid black;
   padding: 10px 20px;
+  margin: 10px;
   border-radius: 5px;
   font-family: "Delius", cursive;
   cursor: pointer;
@@ -1049,22 +1059,22 @@ button {
   background-color: #f08c21;
 }
 
-/* table for no lines and no colours */
 .table-blank {
   margin: 10px;
 }
-.table-blank th, .table-blank td {
+.table-blank th,
+.table-blank td {
   padding: 10px;
 }
 .table-blank {
   border: none;
 }
 
-/* table for colours and lines */
 .table-striped {
   margin: 10px;
 }
-.table-striped th, .table-striped td {
+.table-striped th,
+.table-striped td {
   padding: 10px;
   border: 1px solid black;
 }
@@ -1078,13 +1088,65 @@ button {
   background-color: #fff4e8;
 }
 
-/* table for just lines */
 .table-plane {
   margin: 10px;
 }
-.table-plane th, .table-plane td {
+.table-plane th,
+.table-plane td {
   padding: 10px;
   border: 1px solid black;
+}
+
+form {
+  border: 1px solid #1a3a52;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #1a3a52;
+  border-radius: 4px;
+}
+form label {
+  font-family: "Delius", cursive;
+  display: block;
+  text-decoration: underline;
+}
+form input[type=submit] {
+  border: 1px solid black;
+  width: fit-content;
+  font-family: "Delius", cursive;
+}
+
+.form-fun {
+  border: 1px solid #1a3a52;
+  margin: 10px;
+  padding: 10px;
+  background-color: rgba(173, 159, 34, 0.2);
+  border-radius: 4px;
+}
+.form-fun input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  display: block;
+  border: 1px solid #1a3a52;
+  border-radius: 4px;
+  background-color: rgba(240, 140, 33, 0.5);
+}
+.form-fun label {
+  font-family: "Delius", cursive;
+  display: block;
+  text-decoration: underline;
+}
+.form-fun input[type=submit] {
+  border: 1px solid black;
+  width: fit-content;
+  font-family: "Delius", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

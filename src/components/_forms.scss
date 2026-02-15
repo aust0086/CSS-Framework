@@ -1,1 +1,64 @@
-//do inputs aswell 
+@use 'sass:map';
+@use '../variables/index.scss' as variables;
+
+//form will automatilcy look like this. plain with no colours
+form {
+    border: 1px solid map.get(variables.$colors, midnight);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 4px;
+
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        display: block;
+        border: 1px solid map.get(variables.$colors, midnight);
+        border-radius: 4px;
+    }
+
+    label {
+        font-family: 'Delius', cursive;
+        display: block;
+        text-decoration: underline;
+    }
+
+    input[type="submit"] {
+        border: 1px solid black;
+        width: fit-content;
+        font-family: 'Delius', cursive;
+    }
+}
+
+//this is the fun design for the form
+.form-fun{
+    border: 1px solid map.get(variables.$colors, midnight);
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(map.get(variables.$colors, grass), 0.20);
+    border-radius: 4px;
+
+
+    input {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        display: block;
+        border: 1px solid map.get(variables.$colors, midnight);
+        border-radius: 4px;
+        background-color: rgba(map.get(variables.$colors, tangerine), 0.50);
+    }
+
+    label {
+        font-family: 'Delius', cursive;
+        display: block;
+        text-decoration: underline;
+    }
+
+    input[type="submit"] {
+        border: 1px solid black;
+        width: fit-content;
+        font-family: 'Delius', cursive;
+    }
+}
